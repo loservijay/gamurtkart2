@@ -35,7 +35,7 @@ pipeline {
 
                 // Start Tomcat using sudo
                 sh '''
-                sshpass -p "vijaykumar" ssh vijay@172.17.0.2 "sudo /jobs/apache-tomcat-9.0.104/bin/startup.sh"
+                sshpass -p "vijaykumar" ssh -o StrictHostKeyChecking=no vijay@172.17.0.2 "sudo /jobs/apache-tomcat-9.0.104/bin/startup.sh"
                 '''
             }
         }
