@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh 'mvn compiler:testCompile'
                 sh 'mvn surefire:test'
-                junit 'target/surefire-reports/*.xml'  // Make sure XMLs are here
+                junit 'target/surefire-reports/*.xml'
             }
         }
 
